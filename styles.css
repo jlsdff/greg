@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --clr-primary: #68ecd0;
+  --clr-secondary-2: #091930;
+  --clr-secondary-1: #071121;
+
+  --font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.clr-primary {
+  color: var(--clr-primary);
+}
+.clr-secondary-2 {
+  color: var(--clr-secondary-2);
+}
+.clr-secondary-1 {
+  color: var(--clr-secondary-1);
+}
+
+.poppins-regular {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Custom CSS */
+
+.nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--clr-secondary-1);
+  box-shadow: 0px 8px 10px white;
+}
+
+.cta {
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary-1);
+  transition: all 0.3s ease;
+  border: var(--clr-secondary-1) 2px solid;
+}
+
+.cta:hover {
+  background-color: var(--clr-secondary-2);
+  color: var(--clr-primary);
+  transition: all 0.3s ease;
+  border: var(--clr-primary) 2px solid;
+}
+
+.nav-links a {
+  color: var(--clr-primary);
+}
+.nav-links a,
+.nav-links .cta {
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.spacing-x {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.spacing-y {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--clr-secondary-2);
+  color: var(--clr-primary);
+}
+
+#about-me {
+  height: 100vh;
+  background-color: var(--clr-secondary-1);
+  color: var(--clr-primary);
+  padding: 4rem 8rem;
+}
+
+#about-me h2,
+#about-me p {
+  color: white;
+}
+
+#about-me h2 span {
+  color: var(--clr-primary);
+}
+
+#about-me .con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me .con div {
+  width: 50%;
+}
+
+#about-me .con div p {
+  padding: 0 2rem;
+  line-height: 2rem;
+}
+
+.about-me-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me-img img {
+  width: 300px;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    justify-content: center;
+  }
+  #about-me {
+    padding: 2rem 1rem;
+  }
+}
